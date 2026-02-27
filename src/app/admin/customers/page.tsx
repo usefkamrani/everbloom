@@ -98,7 +98,7 @@ export default function AdminCustomersPage() {
                 <div>
                   <p className="text-lg">{customer.name}</p>
                   <p className="text-xs text-txtSecondary">
-                    سگمنت: {customer.segment}
+                    نوع مشتری: {customer.segment}
                   </p>
                 </div>
                 <div className="flex flex-wrap items-center gap-3 text-sm">
