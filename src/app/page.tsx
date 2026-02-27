@@ -8,8 +8,6 @@ import { SectionFive } from "@/app/landing/Sections/section5";
 import { SectionSix } from "@/app/landing/Sections/section6";
 import { SectionSeven } from "@/app/landing/Sections/section7";
 import { SectionEight } from "@/app/landing/Sections/section8";
-import { SectionNine } from "./landing/Sections/section9";
-
 export default function Home() {
   return (
     <div className="overflow-visible">
@@ -29,8 +27,7 @@ export default function Home() {
       <div className="h-20"></div>
       <SectionEight />
       <div className="h-20"></div>
-      <SectionNine />
-      <div className="h-20"></div>
+
     </div>
   );
 }
