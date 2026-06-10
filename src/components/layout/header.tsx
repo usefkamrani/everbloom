@@ -1,7 +1,6 @@
 ﻿import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AdminEntry } from "./AdminEntry";
 import { MobileMenu } from "./mobileMenu";
 import { SearchBar } from "./searchBar";
 
@@ -24,7 +23,12 @@ export const MyHeader = () => {
           <SearchBar />
         </div>
         <div className="flex items-center gap-2">
-          <AdminEntry />
+          <Link
+            href="/admin"
+            className="h-10 px-3 rounded-lg border border-border text-sm flex items-center bg-white/5 hover:bg-white/10"
+          >
+            پنل ادمین
+          </Link>
           <Link
             href="/login"
             className="h-10 px-4 rounded-lg border border-border text-sm flex items-center"
