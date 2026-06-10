@@ -279,3 +279,51 @@ html, body {
     @apply bg-background text-foreground;
 }
 }
+
+/* Button utility classes and default hover/active transitions */
+@layer components {
+  /* Primary buttons: used where bg-accentPrimary text-txtPrimary is applied */
+  .btn-primary {
+    @apply rounded-lg h-10 px-4 bg-accentPrimary text-txtPrimary flex items-center justify-center;
+    transition: background-color 160ms linear, transform 120ms ease;
+  }
+
+  .btn-primary:hover {
+    /* Slightly lighter background on hover for feedback */
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0);
+    filter: brightness(0.96);
+  }
+
+  /* Secondary / outline buttons */
+  .btn-secondary {
+    @apply rounded-lg h-10 px-4 border border-border text-txtPrimary bg-bgPrimary/10 flex items-center justify-center;
+    transition: background-color 160ms linear, transform 120ms ease, color 160ms linear;
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(255,255,255,0.02);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0);
+  }
+
+  /* Apply sensible defaults to all native buttons and link-buttons */
+  button, a.btn, a.button-like {
+    transition: background-color 160ms linear, transform 120ms ease, color 160ms linear;
+  }
+
+  button:hover, a.btn:hover, a.button-like:hover {
+    transform: translateY(-1px);
+  }
+
+  button:active, a.btn:active, a.button-like:active {
+    transform: translateY(0);
+  }
+}
