@@ -69,7 +69,7 @@ const ProductDetailsClient = ({ product }: ProductDetailsClientProps) => {
         <div className="flex flex-col gap-4">
           <div className="relative w-full aspect-square rounded-2xl border border-border bg-bgSecondary/30 overflow-hidden">
             <Image
-              src={`/plants/productImages/${product.img}.png`}
+              src={`/plants/productImages/${encodeURIComponent(product.img)}.png`}
               alt={`EverBloom | ${product.title}`}
               fill
               className="object-contain"
@@ -84,7 +84,7 @@ const ProductDetailsClient = ({ product }: ProductDetailsClientProps) => {
                 className="relative aspect-square rounded-xl border border-border bg-bgSecondary/20 overflow-hidden"
               >
                 <Image
-                  src={`/plants/productImages/${product.img}.png`}
+                  src={`/plants/productImages/${encodeURIComponent(product.img)}.png`}
                   alt={`EverBloom | ${product.title} thumbnail ${index + 1}`}
                   fill
                   className="object-contain opacity-80"
