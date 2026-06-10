@@ -18,7 +18,7 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: "aloevera",
-    img: "plants (1)",
+  img: "plants-1",
     title: "آلوئه‌ورا",
     rate: "4.2",
     price: "۴,۳۵۰,۰۰۰ ریال",
@@ -44,7 +44,7 @@ export const products: Product[] = [
   },
   {
     slug: "sansevieria",
-    img: "plants (2)",
+  img: "plants-2",
     title: "سانسوریا",
     rate: "3.8",
     price: "۴,۹۱۰,۰۰۰ ریال",
@@ -69,7 +69,7 @@ export const products: Product[] = [
   },
   {
     slug: "spathiphyllum",
-    img: "plants (3)",
+  img: "plants-3",
     title: "اسپاتی‌فیلوم",
     rate: "4.5",
     price: "۵,۳۱۰,۰۰۰ ریال",
@@ -94,7 +94,7 @@ export const products: Product[] = [
   },
   {
     slug: "spider-plant",
-    img: "plants (4)",
+  img: "plants-4",
     title: "گیاه عنکبوتی",
     rate: "4.0",
     price: "۴,۱۵۰,۰۰۰ ریال",
@@ -115,7 +115,7 @@ export const products: Product[] = [
   },
   {
     slug: "ficus-lyrata",
-    img: "plants (5)",
+  img: "plants-5",
     title: "فیکوس لیراتا",
     rate: "4.7",
     price: "۶,۳۵۰,۰۰۰ ریال",
@@ -136,7 +136,7 @@ export const products: Product[] = [
   },
   {
     slug: "zz-plant",
-    img: "plants (6)",
+  img: "plants-6",
     title: "زامیفولیا",
     rate: "3.5",
     price: "۴,۹۵۰,۰۰۰ ریال",
@@ -157,7 +157,7 @@ export const products: Product[] = [
   },
   {
     slug: "pothos",
-    img: "plants (7)",
+  img: "plants-7",
     title: "پوتوس",
     rate: "4.3",
     price: "۴,۲۶۰,۰۰۰ ریال",
@@ -178,7 +178,7 @@ export const products: Product[] = [
   },
   {
     slug: "monstera",
-    img: "plants (8)",
+  img: "plants-8",
     title: "مونسترا",
     rate: "4.8",
     price: "۵,۷۳۰,۰۰۰ ریال",

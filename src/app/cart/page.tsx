@@ -107,7 +107,7 @@ const CartPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-4">
                 <div className="relative aspect-square rounded-xl border border-border bg-bgSecondary/30 overflow-hidden">
                   <Image
-                    src={`/plants/productImages/${item.img}.png`}
+                    src={`/plants/productImages/${encodeURIComponent(item.img)}.png`}
                     alt={`EverBloom | ${item.title}`}
                     fill
                     className="object-contain"
@@ -255,7 +255,7 @@ const CartPage = () => {
             <div className="flex items-center gap-3">
               <div className="relative w-16 h-16 rounded-lg border border-border bg-bgSecondary/30 overflow-hidden">
                 <Image
-                  src="/plants/productImages/plants (7).png"
+                  src="/plants/productImages/plants%20(7).png"
                   alt="EverBloom | پوتوس"
                   fill
                   className="object-contain"

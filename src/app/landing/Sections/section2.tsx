@@ -40,12 +40,12 @@ export const SectionTwo: React.FC = () => {
           onWheel={handleWheel}
         >
           {[
-            { id: 1, title: "گیاه فیلودندرون", price: "۱۹۹٬۰۰۰ تومان", image: "/plants/productImages/plants (1).png", description: "طراحی شیک برای گوشه‌های منزل" },
-            { id: 2, title: "سانسوریا", price: "۱۵۰٬۰۰۰ تومان", image: "/plants/productImages/plants (2).png", description: "نگهداری بسیار آسان، مناسب مبتدی‌ها" },
-            { id: 3, title: "پتوس طلایی", price: "۱۶۵٬۰۰۰ تومان", image: "/plants/productImages/plants (3).png", description: "شاخ و برگ براق و پرپشت" },
-            { id: 4, title: "اسپاتی فیلوم", price: "۲۱۰٬۰۰۰ تومان", image: "/plants/productImages/plants (4).png", description: "پاک‌کنندهٔ هوای داخلی" },
-            { id: 5, title: "زامیفولیا", price: "۱۸۵٬۰۰۰ تومان", image: "/plants/productImages/plants (5).png", description: "مقاوم در برابر کم‌آبی" },
-            { id: 6, title: "میکس کاکتوس", price: "۱۲۰٬۰۰۰ تومان", image: "/plants/productImages/plants (6).png", description: "مجموعه‌ای از کاکتوس‌های کوچک و متنوع" },
+            { id: 1, title: "گیاه فیلودندرون", price: "۱۹۹٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (1)") + ".png", description: "طراحی شیک برای گوشه‌های منزل" },
+            { id: 2, title: "سانسوریا", price: "۱۵۰٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (2)") + ".png", description: "نگهداری بسیار آسان، مناسب مبتدی‌ها" },
+            { id: 3, title: "پتوس طلایی", price: "۱۶۵٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (3)") + ".png", description: "شاخ و برگ براق و پرپشت" },
+            { id: 4, title: "اسپاتی فیلوم", price: "۲۱۰٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (4)") + ".png", description: "پاک‌کنندهٔ هوای داخلی" },
+            { id: 5, title: "زامیفولیا", price: "۱۸۵٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (5)") + ".png", description: "مقاوم در برابر کم‌آبی" },
+            { id: 6, title: "میکس کاکتوس", price: "۱۲۰٬۰۰۰ تومان", image: "/plants/productImages/" + encodeURIComponent("plants (6)") + ".png", description: "مجموعه‌ای از کاکتوس‌های کوچک و متنوع" },
           ].map(product => (
             <LandingProductCard
               key={product.id}

@@ -26,7 +26,7 @@ export const ProductCard: React.FC<product> = ({
     >
       <div className="relative h-full sm:h-fit sm:w-full aspect-square">
         <Image
-          src={`/plants/productImages/${img}.png`}
+          src={`/plants/productImages/${encodeURIComponent(img)}.png`}
           alt={`EverBloom | ${title}`}
           fill
         />
