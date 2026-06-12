@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { MyHeader } from "@/components/layout/header";
 import { MyFooter } from "@/components/layout/footer";
+import { NavigationLoader } from "@/components/layout/NavigationLoader";
 
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  className="min-h-[100%] flex flex-col select-none" dir="rtl">
+        <NavigationLoader />
         <MyHeader />
         <div className="flex-grow">
         {children}
